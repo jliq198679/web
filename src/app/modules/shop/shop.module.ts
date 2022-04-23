@@ -9,10 +9,12 @@ import { AboutComponent } from './components/about/about.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { ChefComponent } from './components/chef/chef.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
-  declarations: [ContainerComponent, PresentationComponent, SpecialsComponent, AboutComponent, MenuComponent, ChefComponent, ContactComponent],
+  declarations: [ContainerComponent, PresentationComponent, SpecialsComponent, AboutComponent, MenuComponent, ChefComponent, ContactComponent, GalleryComponent, FooterComponent],
   imports: [
     CommonModule,
     ShopRoutingModule
