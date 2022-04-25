@@ -11,13 +11,15 @@ import { ChefComponent } from './components/chef/chef.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
   declarations: [ContainerComponent, PresentationComponent, SpecialsComponent, AboutComponent, MenuComponent, ChefComponent, ContactComponent, GalleryComponent, FooterComponent],
   imports: [
     CommonModule,
-    ShopRoutingModule
+    ShopRoutingModule,
+    TranslateModule.forChild()
   ]
 })
 export class ShopModule { }
