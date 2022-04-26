@@ -24,6 +24,10 @@
         "please_call": "Please call",
         "address": "ADDRESS",
         "openings_hours": "OPENING HOURS",
-        "send_us_a_message": "SEND US A MESSAGE"
+        "send_us_a_message": "SEND US A MESSAGE",
+        "form_name": "Name",
+        "form_email": "Email",
+        "form_message": "Message",
+        "send_message": "SEND MESSAGE"
     }
 }
