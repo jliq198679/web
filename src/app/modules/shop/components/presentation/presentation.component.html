@@ -1,10 +1,11 @@
-<div class="intro" [ngStyle]="{'background': 'url(../../../../../assets/intro-bg.jpg)'}">
+
+<div class="intro" *ngIf="image" [ngStyle]="{'background': 'url(' + image + ')'}">
     <div class="overlay">
       <div class="container">
         <div class="row">
           <div class="intro-text">
-            <h1>Gusto</h1>
-            <p>{{'presentation.reservations_phone' | translate}}: (887) 654-3210</p>
+            <h1>{{name}}</h1>
+            <p>{{'presentation.reservations_phone' | translate}}: {{reservationPhone}}</p>
           </div>
         </div>
       </div>

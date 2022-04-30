@@ -26,7 +26,10 @@
   </div>
 </nav>
 <header id="header">
-  <shop-presentation></shop-presentation>
+  <shop-presentation 
+      [frameWeb]="headerFrameWeb" 
+      [reservationPhone]="reservationPhone">
+  </shop-presentation>
 </header>
 <div id="features">
   <shop-specials></shop-specials>
@@ -44,7 +47,7 @@
   <shop-chef></shop-chef>
 </div>
 <div id="contact" class="text-center">
-  <shop-contact></shop-contact>
+  <shop-contact [frameWeb]="contactFrameWeb"></shop-contact>
 </div>
 <div id="footer">
   <shop-footer></shop-footer>

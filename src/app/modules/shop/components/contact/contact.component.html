@@ -3,21 +3,21 @@
       <h3>{{'contact.reservations' | translate }}</h3>
       <div class="contact-item">
         <p>{{'contact.please_call' | translate }}</p>
-        <p>(887) 654-3210</p>
+        <p>{{reservationPhone}}</p>
       </div>
     </div>
     <div class="col-md-4">
       <h3>{{'contact.address' | translate }}</h3>
       <div class="contact-item">
-        <p>4321 California St,</p>
-        <p>San Francisco, CA 12345</p>
+        <p>{{addressLine1}}</p>
+        <p>{{addressLine2}}</p>
       </div>
     </div>
     <div class="col-md-4">
       <h3>{{'contact.openings_hours' | translate }}</h3>
       <div class="contact-item">
-        <p>Mon-Thurs: 10:00 AM - 11:00 PM</p>
-        <p>Fri-Sun: 11:00 AM - 02:00 AM</p>
+        <p>{{openingHoursLine1}}</p>
+        <p>{{openingHoursLine2}}</p>
       </div>
     </div>
   </div>

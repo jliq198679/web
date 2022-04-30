@@ -1,3 +1,3 @@
-import { CardInterface } from "../interfaces";
+import { CardInterface, ContactInterface, HeaderInterface } from "../interfaces";
 
-export type PayloadFrameType = CardInterface
+export type PayloadFrameType = CardInterface | HeaderInterface | ContactInterface
