@@ -13,6 +13,7 @@ export class ContainerComponent implements OnInit {
 
   headerFrameWeb: FrameWebGetInterface;
   contactFrameWeb: FrameWebGetInterface;
+  ourStoryFrameWeb: FrameWebGetInterface;
 
   constructor(public translate: TranslateService,
               public translateService: TranslateService,
@@ -30,6 +31,7 @@ export class ContainerComponent implements OnInit {
     this.frameWebService.get().subscribe((frameWebList: FrameWebGetInterface[])=>{
       this.headerFrameWeb = frameWebList.find(item=>item.frame_name === FrameWebIdEnum.HEADER);
       this.contactFrameWeb = frameWebList.find(item=>item.frame_name === FrameWebIdEnum.CONTACT);
+      this.ourStoryFrameWeb = frameWebList.find(item=>item.frame_name === FrameWebIdEnum.OUR_STORY);
     })
   }
 
