@@ -14,6 +14,7 @@ export class ContainerComponent implements OnInit {
   headerFrameWeb: FrameWebGetInterface;
   contactFrameWeb: FrameWebGetInterface;
   ourStoryFrameWeb: FrameWebGetInterface;
+  ourChefFrameWeb: FrameWebGetInterface;
 
   constructor(public translate: TranslateService,
               public translateService: TranslateService,
@@ -32,6 +33,7 @@ export class ContainerComponent implements OnInit {
       this.headerFrameWeb = frameWebList.find(item=>item.frame_name === FrameWebIdEnum.HEADER);
       this.contactFrameWeb = frameWebList.find(item=>item.frame_name === FrameWebIdEnum.CONTACT);
       this.ourStoryFrameWeb = frameWebList.find(item=>item.frame_name === FrameWebIdEnum.OUR_STORY);
+      this.ourChefFrameWeb = frameWebList.find(item=>item.frame_name === FrameWebIdEnum.CHEF);
     })
   }
 
