@@ -1,3 +1,4 @@
+import { defaultImg } from './../../tools/default.tool';
 import { Component, Input, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { CardInterface, FrameWebGetInterface } from '../../interfaces';
@@ -15,7 +16,7 @@ export class ChefComponent implements OnInit {
   constructor(public translateService: TranslateService) { }
 
   ngOnInit(): void {
-    
+
   }
 
   get name(): string {
@@ -27,9 +28,9 @@ export class ChefComponent implements OnInit {
   }
 
   get image(): string {
-    return this.ourChefData ? this.ourChefData.image : null;
+    return this.ourChefData?.image || defaultImg;
   }
-  
+
   get lang() {
     return this.translateService.currentLang;
   }

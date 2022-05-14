@@ -1,3 +1,4 @@
+import { defaultImg } from './../../tools';
 import { Component, Input, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { CardInterface, FrameWebGetInterface } from '../../interfaces';
@@ -25,9 +26,9 @@ export class AboutComponent implements OnInit {
   }
 
   get image(): string {
-    return this.ourStoryData ? this.ourStoryData.image : null;
+    return this.ourStoryData?.image || defaultImg;
   }
-  
+
   get lang() {
     return this.translateService.currentLang;
   }

@@ -1,3 +1,4 @@
+import { defaultImg } from './../../tools';
 import { Component, Input, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { FrameWebGetInterface, HeaderInterface } from '../../interfaces';
@@ -22,9 +23,9 @@ export class PresentationComponent implements OnInit {
   }
 
   get image(): string {
-    return this.headerData ? this.headerData.image : null;
+    return this.headerData?.image || defaultImg;
   }
-  
+
   get lang() {
     return this.translateService.currentLang;
   }
