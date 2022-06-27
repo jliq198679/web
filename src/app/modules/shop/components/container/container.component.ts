@@ -3,6 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { FrameWebIdEnum } from '../../enums';
 import { ContactInterface, FrameWebGetInterface } from '../../interfaces';
 import { FrameWebService } from '../../services';
+declare var $: any;
 
 @Component({
   selector: 'shop-container',
@@ -22,6 +23,12 @@ export class ContainerComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadFrameWebList();
+
+    $('document').ready(function() {
+      setTimeout(() => {
+        $('#exampleModal').modal('show')
+      }, 2000);
+    });
   }
 
   switchLang(lang: 'es' | 'en') {
@@ -51,5 +58,9 @@ export class ContainerComponent implements OnInit {
 
   get lang() {
     return this.translateService.currentLang;
+  }
+
+  showMenuModal() {
+    alert("YESS")
   }
 }
